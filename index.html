@@ -107,18 +107,6 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
-        .photos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .photos img {
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
         @media (max-width: 768px) {
             main {
                 flex-direction: column;
@@ -127,6 +115,16 @@
                 max-width: 100%;
                 margin-bottom: 2rem;
             }
+        }
+        .photo-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .photo-description {
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
     <script type="application/ld+json">
@@ -188,7 +186,7 @@
                 <h1>Wenhui Chu, Ph.D.</h1>
                 <section id="about">
                     <h2>About Me</h2>
-                    <p>I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture.  I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
+                    <p>I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
                     <p>Before my appointment at Texas A&M, I served as a visiting professor at the University of Houston-Victoria.</p>
                 </section>
                 
@@ -253,24 +251,35 @@
                     <h3><a href="cosc4320.html">COSC 4320 - Software Engineering</a></h3>
                     <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
                 </section>
-
+                
                 <section id="news">
                     <h2>News</h2>
                     <ul>
                         <li><strong>2024.06:</strong> Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students. <a href="thanks.pdf" target="_blank">More information</a></li>
-                        <li><strong>2024.05:</strong> Will join Texas A&M University in the Fall, 2024, go TexAgs!</li>
+                        <li><strong>2024.05:</strong> Accepted job offer from Texas A&M University.</li>
+                        <li><strong>2024.04:</strong> Got five job offers from different institutions.</li>
                         <li><strong>2024.02:</strong> Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
                         <li><strong>2024.01:</strong> Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
                     </ul>
                 </section>
-
+                
                 <section id="photos">
                     <h2>Photos</h2>
-                    <div class="photos">
-                        <img src="hainan1.jpg" alt="Haitang Bay, Sanya, China">
-                        <img src="hainan2.jpg" alt="Haitang Bay, Sanya, China">
-                        <img src="hainan3.jpg" alt="Bodhisattva Guanyin Statue">
-                        <img src="hainan4.jpg" alt="Hainan Coastline">
+                    <div class="photo-section">
+                        <img src="hainan1.jpg" alt="Hainan Beach, China">
+                        <p class="photo-description">Hainan Beach, China</p>
+                    </div>
+                    <div class="photo-section">
+                        <img src="hainan2.jpg" alt="Buddhist Hand Statue, Hainan">
+                        <p class="photo-description">Buddhist Hand Statue, Hainan</p>
+                    </div>
+                    <div class="photo-section">
+                        <img src="hainan3.jpg" alt="Mountain View, Hainan">
+                        <p class="photo-description">Mountain View, Hainan</p>
+                    </div>
+                    <div class="photo-section">
+                        <img src="hainan4.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Cloudy Coast, Hainan</p>
                     </div>
                 </section>
             </div>
