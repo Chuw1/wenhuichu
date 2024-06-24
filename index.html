@@ -126,6 +126,15 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        /* Custom style to remove underline from specific links */
+        .no-underline a {
+            text-decoration: none;
+            color: inherit; /* Keep the default color */
+            font-weight: bold; /* Make the text bold to stand out */
+        }
+        .no-underline a:hover {
+            color: #0056b3; /* Change color on hover */
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -140,13 +149,13 @@
       "jobTitle": "Instructional Assistant Professor",
       "worksFor": {
         "@type": "Organization",
-        "name": "Texas A&M University"
+        "name": "<span class='no-underline'><a href='https://www.tamu.edu/index.html' target='_blank'>Texas A&M University</a></span>"
       },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": [
-          "Boston University",
-          "University of Houston"
+          "<span class='no-underline'><a href='https://www.bu.edu/' target='_blank'>Boston University</a></span>",
+          "<span class='no-underline'><a href='https://uh.edu/' target='_blank'>University of Houston</a></span>"
         ]
       }
     }
@@ -174,7 +183,7 @@
                 <h2>Wenhui Chu, Ph.D.</h2>
                 <p>Instructional Assistant Professor</p>
                 <p>Computer Science and Engineering Department</p>
-                <p>Texas A&M University</p>
+                <p class="no-underline"><a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M University</a></p>
                 <div class="contact-info">
                     <p><span class="icon">📍</span> College Station, TX, USA</p>
                     <p><span class="icon">📧</span> <a href="mailto:chuw1@uhv.edu">chuw1@uhv.edu</a></p>
@@ -186,7 +195,7 @@
                 <h1>Wenhui Chu, Ph.D.</h1>
                 <section id="about">
                     <h2>About Me</h2>
-                    <p>I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
+                    <p>I will be joining the Department of Computer Science and Engineering at <span class="no-underline"><a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M University</a></span> as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at <span class="no-underline"><a href="https://www.bu.edu/" target="_blank">Boston University</a></span> in 2016, and my Ph.D. in Computer Science from the <span class="no-underline"><a href="https://uh.edu/" target="_blank">University of Houston</a></span> in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
                     <p>Before my appointment at Texas A&M, I served as a visiting professor at the University of Houston-Victoria.</p>
                 </section>
                
@@ -252,18 +261,15 @@
                     <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
                 </section>
                
-             <section id="news">
-    <h2>News</h2>
-    <ul>
-        <li><strong>2024.06:</strong> Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students. Special thanks to <span class="no-underline"><a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/yun-wan.aspx" target="_blank">Dr. Yun Wan</a>, <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/aobo-jin.aspx" target="_blank">Dr. Aobo Jin</a>, and <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/hardik-gohel.aspx" target="_blank">Dr. Hardik A. Gohel</a></span> for all the support.
-</li>
-        <li><strong>2024.05:</strong> Will join Texas A&M University in the Fall 2024, go TexAgs!</li>
-        <li><strong>2024.02:</strong> Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
-        <li><strong>2024.01:</strong> Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
-    </ul>
-</section>
-
-
+                <section id="news">
+                    <h2>News</h2>
+                    <ul>
+                        <li><strong>2024.06:</strong> Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students. Special thanks to <span class="no-underline"><a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/yun-wan.aspx" target="_blank">Dr. Yun Wan</a>, <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/aobo-jin.aspx" target="_blank">Dr. Aobo Jin</a>, and <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/hardik-gohel.aspx" target="_blank">Dr. Hardik A. Gohel</a></span> for all the support</li>
+                        <li><strong>2024.05:</strong> Will join Texas A&M University in the Fall 2024, go TexAgs!</li>
+                        <li><strong>2024.02:</strong> Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
+                        <li><strong>2024.01:</strong> Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
+                    </ul>
+                </section>
                
                 <section id="photos">
                     <h2>Photos</h2>
