@@ -26,15 +26,11 @@
             background-color: #500000;
             color: #fff;
             padding: 1rem 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         nav ul {
             list-style-type: none;
             display: flex;
             justify-content: center;
-            flex-grow: 1;
         }
         nav ul li {
             margin: 0 15px;
@@ -47,25 +43,6 @@
         }
         nav ul li a:hover, nav ul li a.active {
             color: #d3d3d3;
-        }
-        .language-switch {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .language-switch button {
-            margin: 5px 0;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            cursor: pointer;
-            background-color: #fff;
-            border: none;
-            color: #500000;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-        }
-        .language-switch button:hover {
-            background-color: #d3d3d3;
         }
         main {
             display: flex;
@@ -187,165 +164,140 @@
                     <li><a href="#photos">Photos</a></li>
                 </ul>
             </nav>
-            <div class="language-switch">
-                <button onclick="translateToEnglish()">English</button>
-                <button onclick="translateToSpanish()">Español</button>
-            </div>
         </div>
     </header>
-    
+   
     <div class="container">
         <main>
             <div class="profile-column">
                 <img src="enhanced_rightmost_person.jpg" alt="Wenhui Chu" class="profile-photo">
-                <h2 class="lang" data-en="Wenhui Chu, Ph.D." data-es="Wenhui Chu, Ph.D.">Wenhui Chu, Ph.D.</h2>
-                <p class="lang" data-en="Instructional Assistant Professor" data-es="Profesor Asistente de Instrucción">Instructional Assistant Professor</p>
-                <p class="lang" data-en="Computer Science and Engineering Department" data-es="Departamento de Ciencias de la Computación e Ingeniería">Computer Science and Engineering Department</p>
-                <p class="lang" data-en="Texas A&M University" data-es="Universidad Texas A&M">Texas A&M University</p>
+                <h2>Wenhui Chu, Ph.D.</h2>
+                <p>Instructional Assistant Professor</p>
+                <p>Computer Science and Engineering Department</p>
+                <p>Texas A&M University</p>
                 <div class="contact-info">
-                    <p><span class="icon">📍</span> <span class="lang" data-en="College Station, TX, USA" data-es="College Station, TX, EE.UU.">College Station, TX, USA</span></p>
+                    <p><span class="icon">📍</span> College Station, TX, USA</p>
                     <p><span class="icon">📧</span> <a href="mailto:chuw1@uhv.edu">chuw1@uhv.edu</a></p>
                     <p><span class="icon">🎓</span> <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=I_524IMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
                 </div>
             </div>
-            
+           
             <div class="content-column">
-                <h1 class="lang" data-en="Wenhui Chu, Ph.D." data-es="Wenhui Chu, Ph.D.">Wenhui Chu, Ph.D.</h1>
+                <h1>Wenhui Chu, Ph.D.</h1>
                 <section id="about">
-                    <h2 class="lang" data-en="About Me" data-es="Sobre Mí">About Me</h2>
-                    <p class="lang" data-en="I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing." data-es="Me uniré al Departamento de Ciencias de la Computación e Ingeniería de la Universidad Texas A&M como Profesor Asistente de Instrucción en el otoño de 2024. Mi investigación se centra principalmente en la Inteligencia Artificial, el Aprendizaje Automático, la Robótica y la Visión por Computadora. Nací en la ciudad costera de Qingdao, Shan Dong, China, conocida por sus pintorescas playas y su vibrante cultura. Obtuve mi título de Maestría en Ciencias del Departamento de Ciencias de la Computación en la Universidad de Boston en 2016, y mi Ph.D. en Ciencias de la Computación en la Universidad de Houston en 2021, donde mi trabajo se concentró en métodos computacionales para aplicadores férricos guiados por MRI y alimentados, incluyendo modelado y procesamiento de imágenes.">I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
-                    <p class="lang" data-en="Before my appointment at Texas A&M, I served as a visiting professor at the University of Houston-Victoria." data-es="Antes de mi nombramiento en Texas A&M, fui profesor visitante en la Universidad de Houston-Victoria.">Before my appointment at Texas A&M, I served as a visiting professor at the University of Houston-Victoria.</p>
+                    <h2>About Me</h2>
+                    <p>I will be joining the Department of Computer Science and Engineering at Texas A&M University as an Instructional Assistant Professor in Fall 2024. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I was born in the coastal city of Qingdao, Shan Dong, China, known for its picturesque beaches and vibrant culture. I earned my Master of Science degree from the Computer Science Department at Boston University in 2016, and my Ph.D. in Computer Science from the University of Houston in 2021, where my work concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
+                    <p>Before my appointment at Texas A&M, I served as a visiting professor at the University of Houston-Victoria.</p>
                 </section>
-                
+               
                 <section id="teaching-philosophy">
-                    <h2 class="lang" data-en="Teaching Philosophy" data-es="Filosofía de Enseñanza">Teaching Philosophy</h2>
-                    <p class="lang" data-en="I have a profound passion for teaching as it allows me to effectively impart knowledge to future generations. I take great care in planning my classes, focusing on condensing key topics that will benefit students in the future. Teaching computer science, especially programming courses, presents unique challenges, such as conveying fundamental coding logic and algorithms through limited examples. However, the fulfillment I experience when my students successfully create impressive programs is immensely rewarding." data-es="Tengo una profunda pasión por la enseñanza, ya que me permite impartir conocimientos de manera efectiva a las futuras generaciones. Me esfuerzo mucho en planificar mis clases, enfocándome en condensar los temas clave que beneficiarán a los estudiantes en el futuro. Enseñar ciencias de la computación, especialmente cursos de programación, presenta desafíos únicos, como transmitir la lógica y los algoritmos fundamentales de la codificación a través de ejemplos limitados. Sin embargo, la satisfacción que experimento cuando mis estudiantes crean programas impresionantes es inmensamente gratificante.">I have a profound passion for teaching as it allows me to effectively impart knowledge to future generations. I take great care in planning my classes, focusing on condensing key topics that will benefit students in the future. Teaching computer science, especially programming courses, presents unique challenges, such as conveying fundamental coding logic and algorithms through limited examples. However, the fulfillment I experience when my students successfully create impressive programs is immensely rewarding.</p>
-                    
-                    <p class="lang" data-en="My educational approach is founded on three fundamental principles: encouraging analytical thought, ensuring a comprehensive grasp of topics, and supporting the personal and academic development of each student. I emphasize real-world problem-solving and analytical skills, fostering an environment where students can deconstruct, analyze, and create innovative solutions." data-es="Mi enfoque educativo se basa en tres principios fundamentales: fomentar el pensamiento analítico, asegurar una comprensión integral de los temas y apoyar el desarrollo personal y académico de cada estudiante. Enfatizo la resolución de problemas del mundo real y las habilidades analíticas, fomentando un entorno donde los estudiantes puedan descomponer, analizar y crear soluciones innovadoras.">My educational approach is founded on three fundamental principles: encouraging analytical thought, ensuring a comprehensive grasp of topics, and supporting the personal and academic development of each student. I emphasize real-world problem-solving and analytical skills, fostering an environment where students can deconstruct, analyze, and create innovative solutions.</p>
-                    
-                    <p class="lang" data-en="I aim to ignite students' genuine interest in the subject matter by incorporating captivating topics and demonstrating practical applications. My teaching philosophy strongly believes in student-centered education, where students understand the relevance of their knowledge for future endeavors." data-es="Mi objetivo es despertar el interés genuino de los estudiantes en la materia mediante la incorporación de temas atractivos y la demostración de aplicaciones prácticas. Mi filosofía de enseñanza cree firmemente en la educación centrada en el estudiante, donde los estudiantes comprendan la relevancia de su conocimiento para futuros esfuerzos.">I aim to ignite students' genuine interest in the subject matter by incorporating captivating topics and demonstrating practical applications. My teaching philosophy strongly believes in student-centered education, where students understand the relevance of their knowledge for future endeavors.</p>
+                    <h2>Teaching Philosophy</h2>
+                    <p>I have a profound passion for teaching as it allows me to effectively impart knowledge to future generations. I take great care in planning my classes, focusing on condensing key topics that will benefit students in the future. Teaching computer science, especially programming courses, presents unique challenges, such as conveying fundamental coding logic and algorithms through limited examples. However, the fulfillment I experience when my students successfully create impressive programs is immensely rewarding.</p>
+                   
+                    <p>My educational approach is founded on three fundamental principles: encouraging analytical thought, ensuring a comprehensive grasp of topics, and supporting the personal and academic development of each student. I emphasize real-world problem-solving and analytical skills, fostering an environment where students can deconstruct, analyze, and create innovative solutions.</p>
+                   
+                    <p> I aim to ignite students' genuine interest in the subject matter by incorporating captivating topics and demonstrating practical applications. My teaching philosophy strongly believes in student-centered education, where students understand the relevance of their knowledge for future endeavors.</p>
                 </section>
-                
+               
                 <section id="research">
-                    <h2 class="lang" data-en="Research" data-es="Investigación">Research</h2>
-                    <h3 class="lang" data-en="Current Projects" data-es="Proyectos Actuales">Current Projects</h3>
+                    <h2>Research</h2>
+                    <h3>Current Projects</h3>
                     <ul>
                         <li>
-                            <strong class="lang" data-en="BNU-net: a novel deep learning approach for LV MRI analysis in short-Axis MRI" data-es="BNU-net: un nuevo enfoque de aprendizaje profundo para el análisis de MRI LV en MRI de eje corto">BNU-net: a novel deep learning approach for LV MRI analysis in short-Axis MRI</strong>
+                            <strong>BNU-net: a novel deep learning approach for LV MRI analysis in short-Axis MRI</strong>
                             <ul>
-                                <li class="lang" data-en="Student: TBA" data-es="Estudiante: Por definir">Student: TBA</li>
-                                <li class="lang" data-en="Previous work: " data-es="Trabajo anterior: "><a href="https://ieeexplore.ieee.org/abstract/document/8941959" target="_blank">https://ieeexplore.ieee.org/abstract/document/8941959</a></li>
+                                <li>Student: TBA</li>
+                                <li>Previous work: <a href="https://ieeexplore.ieee.org/abstract/document/8941959" target="_blank">https://ieeexplore.ieee.org/abstract/document/8941959</a></li>
                             </ul>
                         </li>
                         <li>
-                            <strong class="lang" data-en="Simulations and Advancements in MRI-Guided Power-Driven Ferric Tools for Wireless Therapeutic Interventions" data-es="Simulaciones y Avances en Herramientas Férricas Impulsadas por Energía Guiadas por MRI para Intervenciones Terapéuticas Inalámbricas">Simulations and Advancements in MRI-Guided Power-Driven Ferric Tools for Wireless Therapeutic Interventions</strong>
+                            <strong>Simulations and Advancements in MRI-Guided Power-Driven Ferric Tools for Wireless Therapeutic Interventions</strong>
                             <ul>
-                                <li class="lang" data-en="Student: TBA" data-es="Estudiante: Por definir">Student: TBA</li>
-                                <li class="lang" data-en="Previous work: " data-es="Trabajo anterior: "><a href="https://ieeexplore.ieee.org/abstract/document/10433835" target="_blank">https://ieeexplore.ieee.org/abstract/document/10433835</a></li>
+                                <li>Student: TBA</li>
+                                <li>Previous work: <a href="https://ieeexplore.ieee.org/abstract/document/10433835" target="_blank">https://ieeexplore.ieee.org/abstract/document/10433835</a></li>
                             </ul>
                         </li>
                     </ul>
                 </section>
-                
+               
                 <section id="current-courses">
-                    <h2 class="lang" data-en="Teaching" data-es="Enseñanza">Teaching</h2>
-                    <h3 class="lang" data-en="Spring 2024 Semester" data-es="Semestre de Primavera 2024">Spring 2024 Semester</h3>
-                    <h3><a href="cosc3317.html" class="lang" data-en="COSC 3317 - Object Oriented Programming" data-es="COSC 3317 - Programación Orientada a Objetos">COSC 3317 - Object Oriented Programming</a></h3>
-                    <p class="lang" data-en="Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024" data-es="Curso de pregrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2024">Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
-                    
-                    <h3><a href="cosc6328.html" class="lang" data-en="COSC 6328 - Deep Learning" data-es="COSC 6328 - Aprendizaje Profundo">COSC 6328 - Deep Learning</a></h3>
-                    <p class="lang" data-en="Graduate course, University of Houston-Victoria, Computer Science Department, 2024" data-es="Curso de posgrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2024">Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
-                    
-                    <h3><a href="cosc4360.html" class="lang" data-en="COSC 4360 - Senior Project" data-es="COSC 4360 - Proyecto de Último Año">COSC 4360 - Senior Project</a></h3>
-                    <p class="lang" data-en="Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024" data-es="Curso de pregrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2024">Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
-                    
-                    <h3><a href="cosc6379.html" class="lang" data-en="COSC 6379 - Data Science in Healthcare" data-es="COSC 6379 - Ciencia de Datos en la Salud">COSC 6379 - Data Science in Healthcare</a></h3>
-                    <p class="lang" data-en="Graduate course, University of Houston-Victoria, Computer Science Department, 2024" data-es="Curso de posgrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2024">Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
-                    
-                    <h3><a href="cosc6342.html" class="lang" data-en="COSC 6342 - Software Engineering Project Management" data-es="COSC 6342 - Gestión de Proyectos de Ingeniería de Software">COSC 6342 - Software Engineering Project Management</a></h3>
-                    <p class="lang" data-en="Graduate course, University of Houston-Victoria, Computer Science Department, 2024" data-es="Curso de posgrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2024">Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
-                    
-                    <h3 class="lang" data-en="Fall 2023 Semester" data-es="Semestre de Otoño 2023">Fall 2023 Semester</h3>
-                    <h3><a href="cosc6345.html" class="lang" data-en="COSC 6345 - Design and Analysis of Algorithms" data-es="COSC 6345 - Diseño y Análisis de Algoritmos">COSC 6345 - Design and Analysis of Algorithms</a></h3>
-                    <p class="lang" data-en="Graduate course, University of Houston-Victoria, Computer Science Department, 2023" data-es="Curso de posgrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2023">Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
-                    
-                    <h3><a href="cosc6349.html" class="lang" data-en="COSC 6349 - Computer Vision and Image Processing" data-es="COSC 6349 - Visión por Computadora y Procesamiento de Imágenes">COSC 6349 - Computer Vision and Image Processing</a></h3>
-                    <p class="lang" data-en="Graduate course, University of Houston-Victoria, Computer Science Department, 2023" data-es="Curso de posgrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2023">Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
-                    
-                    <h3><a href="gmng4322.html" class="lang" data-en="GMNG 4322 - Game Artificial Intelligence and Behavioral Modeling" data-es="GMNG 4322 - Inteligencia Artificial y Modelado de Comportamiento en Juegos">GMNG 4322 - Game Artificial Intelligence and Behavioral Modeling</a></h3>
-                    <p class="lang" data-en="Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023" data-es="Curso de pregrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2023">Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
-                    
-                    <h3><a href="cosc4320.html" class="lang" data-en="COSC 4320 - Software Engineering" data-es="COSC 4320 - Ingeniería de Software">COSC 4320 - Software Engineering</a></h3>
-                    <p class="lang" data-en="Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023" data-es="Curso de pregrado, Universidad de Houston-Victoria, Departamento de Ciencias de la Computación, 2023">Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                    <h2>Teaching</h2>
+                    <h3>Spring 2024 Semester</h3>
+                    <h3><a href="cosc3317.html">COSC 3317 - Object Oriented Programming</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6328.html">COSC 6328 - Deep Learning</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc4360.html">COSC 4360 - Senior Project</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6379.html">COSC 6379 - Data Science in Healthcare</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6342.html">COSC 6342 - Software Engineering Project Management</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3>Fall 2023 Semester</h3>
+                    <h3><a href="cosc6345.html">COSC 6345 - Design and Analysis of Algorithms</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="cosc6349.html">COSC 6349 - Computer Vision and Image Processing</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="gmng4322.html">GMNG 4322 - Game Artificial Intelligence and Behavioral Modeling</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="cosc4320.html">COSC 4320 - Software Engineering</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
                 </section>
-                
+               
                 <section id="news">
-                    <h2 class="lang" data-en="News" data-es="Noticias">News</h2>
+                    <h2>News</h2>
                     <ul>
-                        <li><strong class="lang" data-en="2024.06:" data-es="2024.06:">2024.06:</strong> <span class="lang" data-en="Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students." data-es="Recibió una carta de agradecimiento del Vicepresidente de la Universidad de Houston-Victoria por su servicio a los estudiantes de UHV.">Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students.</span></li>
-                        <li><strong class="lang" data-en="2024.05:" data-es="2024.05:">2024.05:</strong> <span class="lang" data-en="Will join Texas A&M University in the Fall 2024, go TexAgs!" data-es="Se unirá a la Universidad Texas A&M en el otoño de 2024, ¡vamos TexAgs!">Will join Texas A&M University in the Fall 2024, go TexAgs!</span></li>
-                        <li><strong class="lang" data-en="2024.02:" data-es="2024.02:">2024.02:</strong> <span class="lang" data-en="Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC)." data-es="Presentó artículos en la 3ra Conferencia Internacional IEEE sobre IA en Ciberseguridad (ICAIC).">Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</span></li>
-                        <li><strong class="lang" data-en="2024.01:" data-es="2024.01:">2024.01:</strong> <span class="lang" data-en="Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC)." data-es="Dos artículos aceptados en la 3ra Conferencia Internacional IEEE sobre IA en Ciberseguridad (ICAIC).">Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</span></li>
+                        <li><strong>2024.06:</strong> Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students. </li>
+                        <li><strong>2024.05:</strong> Will join Texas A&M University in the Fall 2024, go TexAgs!</li>
+                        <li><strong>2024.02:</strong> Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
+                        <li><strong>2024.01:</strong> Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
                     </ul>
                 </section>
-                
+               
                 <section id="photos">
-                    <h2 class="lang" data-en="Photos" data-es="Fotos">Photos</h2>
+                    <h2>Photos</h2>
                        
                     <div class="photo-section">
-                        <img src="qingdao1.jpg" alt="Qingdao, 06/2024">
-                        <p class="photo-description lang" data-en="Qingdao, 06/2024" data-es="Qingdao, 06/2024">Qingdao, 06/2024</p>
+                        <img src="qingdao1.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
                     </div>
                      <div class="photo-section">
-                        <img src="qingdao2.jpg" alt="Qingdao, 06/2024">
-                        <p class="photo-description lang" data-en="Qingdao, 06/2024" data-es="Qingdao, 06/2024">Qingdao, 06/2024</p>
+                        <img src="qingdao2.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
                     </div>
                      <div class="photo-section">
-                        <img src="qingdao3.jpg" alt="Qingdao, 06/2024">
-                        <p class="photo-description lang" data-en="Qingdao, 06/2024" data-es="Qingdao, 06/2024">Qingdao, 06/2024</p>
+                        <img src="qingdao3.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
                     </div>
                     <div class="photo-section">
-                        <img src="hainan1.jpg" alt="Mountain View, Hainan, 12/2019">
-                        <p class="photo-description lang" data-en="Mountain View, Hainan, 12/2019" data-es="Vista de la Montaña, Hainan, 12/2019">Mountain View, Hainan, 12/2019</p>
+                        <img src="hainan1.jpg" alt="Hainan Beach, China">
+                        <p class="photo-description">Mountain View, Hainan, 12/2019</p>
                     </div>
                     <div class="photo-section">
-                        <img src="hainan2.jpg" alt="Haitang Bay, Sanya, 12/2019">
-                        <p class="photo-description lang" data-en="Haitang Bay, Sanya, 12/2019" data-es="Bahía Haitang, Sanya, 12/2019">Haitang Bay, Sanya, 12/2019</p>
+                        <img src="hainan2.jpg" alt="Buddhist Hand Statue, Hainan">
+                        <p class="photo-description">Haitang Bay, Sanya, 12/2019</p>
                     </div>
                     <div class="photo-section">
-                        <img src="hainan3.jpg" alt="Bodhisattva Guanyin Statue, Hainan, 12/2019">
-                        <p class="photo-description lang" data-en="Bodhisattva Guanyin Statue, Hainan, 12/2019" data-es="Estatua de Bodhisattva Guanyin, Hainan, 12/2019">Bodhisattva Guanyin Statue, Hainan, 12/2019</p>
+                        <img src="hainan3.jpg" alt="Mountain View, Hainan">
+                        <p class="photo-description">Bodhisattva Guanyin Statue, Hainan, 12/2019</p>
                      </div>
                 </section>
             </div>
         </main>
     </div>
-    
+   
     <footer>
         <div class="container">
-            <p>&copy; 2024 Wenhui Chu. <span class="lang" data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+            <p>&copy; 2024 Wenhui Chu. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        function translateToEnglish() {
-            const elements = document.querySelectorAll('.lang');
-            elements.forEach(element => {
-                element.textContent = element.getAttribute('data-en');
-            });
-        }
-
-        function translateToSpanish() {
-            const elements = document.querySelectorAll('.lang');
-            elements.forEach(element => {
-                element.textContent = element.getAttribute('data-es');
-            });
-        }
-
-        // Set default language to English
-        document.addEventListener('DOMContentLoaded', (event) => {
-            translateToEnglish();
-        });
-    </script>
 </body>
 </html>
