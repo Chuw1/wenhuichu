@@ -26,11 +26,15 @@
             background-color: #500000;
             color: #fff;
             padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         nav ul {
             list-style-type: none;
             display: flex;
             justify-content: center;
+            flex-grow: 1;
         }
         nav ul li {
             margin: 0 15px;
@@ -46,14 +50,22 @@
         }
         .language-switch {
             display: flex;
-            justify-content: center;
-            margin: 1rem 0;
+            flex-direction: column;
+            align-items: center;
         }
         .language-switch button {
-            margin: 0 5px;
+            margin: 5px 0;
             padding: 0.5rem 1rem;
             font-size: 1rem;
             cursor: pointer;
+            background-color: #fff;
+            border: none;
+            color: #500000;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+        .language-switch button:hover {
+            background-color: #d3d3d3;
         }
         main {
             display: flex;
@@ -175,14 +187,14 @@
                     <li><a href="#photos">Photos</a></li>
                 </ul>
             </nav>
+            <div class="language-switch">
+                <button onclick="translateToEnglish()">English</button>
+                <button onclick="translateToSpanish()">Español</button>
+            </div>
         </div>
     </header>
     
     <div class="container">
-        <div class="language-switch">
-            <button onclick="translateToEnglish()">English</button>
-            <button onclick="translateToSpanish()">Español</button>
-        </div>
         <main>
             <div class="profile-column">
                 <img src="enhanced_rightmost_person.jpg" alt="Wenhui Chu" class="profile-photo">
