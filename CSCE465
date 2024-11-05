@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCE 465 Computer and Network Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+    <header>
+      
+    </header>
+    <main>
+        <h1>CSCE 465 Computer and Network Security</h1>
+        <p>Undergraduate course, Texas A&M University, Computer Science Department, 2025</p>
+        <p>Credits 3. 3 Lecture Hours. Fundamental concepts and principles of computer security, operating system and network security, secret key and public key cryptographic algorithms, hash functions, authentication, firewalls and intrusion detection systems, IPSec and VPN, wireless and web security.  </p>
+        
+        <p>Prerequisites: Grade of C or better in CSCE 315 or CSCE 331, and CSCE 313 ; junior or senior classification; approval of instructor. </p>
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 Wenhui Chu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
