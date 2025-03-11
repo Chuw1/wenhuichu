@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,13 +41,126 @@
             font-weight: 700;
             transition: color 0.3s ease;
         }
-        nav ul li a:hover,
-        nav ul li a.active {
+        nav ul li a:hover, nav ul li a.active {
             color: #d3d3d3;
         }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+        .profile-column {
+            flex: 1;
+            max-width: 300px;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        } 
+        .content-column {
+            flex: 2;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #500000;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            color: #0056b3;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .contact-info {
+            margin-top: 1rem;
+        }
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .profile-column, .content-column {
+                max-width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+        .photo-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .photo-description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Custom style to remove underline from specific links */
+        .no-underline a {
+            text-decoration: none;
+            color: inherit; /* Keep the default color */
+            font-weight: bold; /* Make the text bold to stand out */
+        }
+        .no-underline a:hover {
+            color: #0056b3; /* Change color on hover */
+        }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Wenhui Chu",
+      "url": "http://www.wenhuichu.com",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=I_524IMAAAAJ",
+        "https://www.linkedin.com/in/wenhui-chu-187370232/"
+      ],
+      "jobTitle": "Instructional Assistant Professor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "<span class='no-underline'><a href='https://www.tamu.edu/index.html' target='_blank'>Texas A&M University</a></span>"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": [
+          "<span class='no-underline'><a href='https://www.bu.edu/' target='_blank'>Boston University</a></span>",
+          "<span class='no-underline'><a href='https://uh.edu/' target='_blank'>University of Houston</a></span>"
+        ]
+      }
+    }
+    </script>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -63,51 +175,167 @@
             </nav>
         </div>
     </header>
+   
+    <div class="container">
+        <main>
+            <div class="profile-column">
+                <img src="head2.jpg" alt="Wenhui Chu" class="profile-photo">
+                <h2>Wenhui Chu, Ph.D.</h2>
+                <p>Instructional Assistant Professor</p>
+                <p>Computer Science and Engineering Department</p>
+                <p class="no-underline"><a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M University</a></p>
+                <div class="contact-info">
+                    <p><span class="icon">📍</span> College Station, TX, USA</p>
+                    <p><span class="icon">📧</span> <a href="mailto:chuw1@tamu.edu">chuw1@tamu.edu</a></p>
+                    <p><span class="icon">🎓</span> <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=I_524IMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+                </div>
+            </div>
+           
+            <div class="content-column">
+                <h1>Wenhui Chu, Ph.D.</h1>
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Howdy! I am an Instructional Assistant Professor in the Department of Computer Science and Engineering at <span class="no-underline"><a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M University</a></span>. My research focuses primarily on Artificial intelligence, Machine Learning, Robotics, and Computer Vision. I earned my Master of Science degree in Computer Science at <span class="no-underline"><a href="https://www.bu.edu/" target="_blank">Boston University</a></span>, and my Ph.D. in Computer Science from the <span class="no-underline"><a href="https://uh.edu/" target="_blank">University of Houston</a></span>, where I worked with <span class="no-underline"><a href="https://sites.google.com/cougarnet.uh.edu/tsekos-site/home" target="_blank">Dr. Nikolaos V. Tsekos</a></span> concentrated on computational methods for MRI-guided and powered ferric applicators, including modeling and image processing.</p>
+                    <p>Before my appointment at Texas A&M, I served as a visiting professor at the <span class="no-underline"><a href="https://www.uhv.edu/" target="_blank">University of Houston-Victoria</a></span>.</p>
+                </section>
+               
+<!--                 <section id="teaching-philosophy">
+                    <h2>Teaching Philosophy</h2>
+                    <p>I have a profound passion for teaching as it allows me to effectively impart knowledge to future generations. I take great care in planning my classes, focusing on condensing key topics that will benefit students in the future. Teaching computer science, especially programming courses, presents unique challenges, such as conveying fundamental coding logic and algorithms through limited examples. However, the fulfillment I experience when my students successfully create impressive programs is immensely rewarding.</p>
+                   
+                    <p>My educational approach is founded on three fundamental principles: encouraging analytical thought, ensuring a comprehensive grasp of topics, and supporting the personal and academic development of each student. I emphasize real-world problem-solving and analytical skills, fostering an environment where students can deconstruct, analyze, and create innovative solutions.</p>
+                   
+                    <p> I aim to ignite students' genuine interest in the subject matter by incorporating captivating topics and demonstrating practical applications. My teaching philosophy strongly believes in student-centered education, where students understand the relevance of their knowledge for future endeavors.</p>
+                </section>
+                -->
+               
+               
+                <section id="current-courses">
+                    <h2>Teaching</h2>
+<!--                      <h3>Spring 2024 Semester</h3>  -->
 
+                         <h3><a href="CSCE465.html">CSCE 465 Computer and Network Security</a></h3>
+                    <p> Undergraduate course, Texas A&M University, Computer Science Department, 2025</p>
+                    
+                        
+                    <h3><a href="CSCE222.html">CSCE 222/ECEN 222 Discrete Structures for Computing</a></h3>
+                    <p> Undergraduate course, Texas A&M University, Computer Science Department, 2025</p>
+                    
+                         <h3><a href="CSCE452.html">CSCE 452 - Robotics & Spatl Intel</a></h3>
+                    <p> Undergraduate course, Texas A&M University, Computer Science Department, 2025</p>
+
+                    
+                    <h3><a href="CSCE222.html">CSCE 222/ECEN 222 Discrete Structures for Computing</a></h3>
+                    <p> Undergraduate course, Texas A&M University, Computer Science Department, 2024</p>
+
+                    
+                    <h3><a href="CSCE310.html">CSCE 310 Database Systems</a></h3>
+                    <p> Undergraduate course, Texas A&M University, Computer Science Department, 2024</p>
+                    
+                    <h3><a href="cosc3317.html">COSC 3317 - Object Oriented Programming</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6328.html">COSC 6328 - Deep Learning</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc4360.html">COSC 4360 - Senior Project</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6379.html">COSC 6379 - Data Science in Healthcare</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+                    <h3><a href="cosc6342.html">COSC 6342 - Software Engineering Project Management</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2024</p>
+                   
+<!--                     <h3>Fall 2023 Semester</h3> -->
+                    <h3><a href="cosc6345.html">COSC 6345 - Design and Analysis of Algorithms</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="cosc6349.html">COSC 6349 - Computer Vision and Image Processing</a></h3>
+                    <p>Graduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="gmng4322.html">GMNG 4322 - Game Artificial Intelligence and Behavioral Modeling</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                   
+                    <h3><a href="cosc4320.html">COSC 4320 - Software Engineering</a></h3>
+                    <p>Undergraduate course, University of Houston-Victoria, Computer Science Department, 2023</p>
+                </section>
+
+
+                 <section id="research">
+                    <h2>Research</h2>
+                    <h3>Current Projects</h3>
+                    <ul>
+                        <li>
+                            <strong>BNU-net: a novel deep learning approach for LV MRI analysis in short-Axis MRI</strong>
+                            <ul>
+                                <li>Student: TBA</li>
+                                <li>Previous work: <a href="https://ieeexplore.ieee.org/abstract/document/8941959" target="_blank">https://ieeexplore.ieee.org/abstract/document/8941959</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Simulations and Advancements in MRI-Guided Power-Driven Ferric Tools for Wireless Therapeutic Interventions</strong>
+                            <ul>
+                                <li>Student: TBA</li>
+                                <li>Previous work: <a href="https://ieeexplore.ieee.org/abstract/document/10433835" target="_blank">https://ieeexplore.ieee.org/abstract/document/10433835</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section id="news">
+                    <h2>News</h2>
+                    <ul>
+                        <li><strong>2024.08 - now</strong> Undergrad Awards Committee member in the Department of Computer Science and Engineering.</li>
+                        <li><strong>2024.06:</strong> Received a letter of appreciation from the Vice President of the University of Houston-Victoria for service to UHV students. Special thanks to <span class="no-underline"><a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/yun-wan.aspx" target="_blank">Dr. Yun Wan</a>, <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/aobo-jin.aspx" target="_blank">Dr. Aobo Jin</a>, and <a href="https://www.uhv.edu/natural-applied-science/contact-us/our-faculty/hardik-gohel.aspx" target="_blank">Dr. Hardik A. Gohel</a></span> for their exceptional support and guidance!</li>
+                        <li><strong>2024.05:</strong> I will join the department of computer science and engineering at the Texas A&M University on Fall 2024</li>
+                        <li><strong>2024.02:</strong> Presented papers at the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
+                        <li><strong>2024.01:</strong> Two papers accepted by the 3rd IEEE International Conference on AI in Cybersecurity (ICAIC).</li>
+                    </ul>
+                </section>
+               
+<!--                 <section id="photos">
+                    <h2>Photos</h2>
+                       <div class="photo-section">
+                        <img src="miami.jpg" alt="Cloudy Coast, miami">
+                        <p class="photo-description">Miami, 04/2024</p>
+                    </div> 
+                    <div class="photo-section">
+                        <img src="qingdao1.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
+                    </div>
+                     <div class="photo-section">
+                        <img src="qingdao2.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
+                    </div>
+                     <div class="photo-section">
+                        <img src="qingdao3.jpg" alt="Cloudy Coast, Hainan">
+                        <p class="photo-description">Qingdao, 06/2024</p>
+                    </div>
+                    <div class="photo-section">
+                        <img src="hainan1.jpg" alt="Hainan Beach, China">
+                        <p class="photo-description">Mountain View, Hainan, 12/2019</p>
+                    </div>
+                     <div class="photo-section">
+                        <img src="hainan2.jpg" alt="Buddhist Hand Statue, Hainan">
+                        <p class="photo-description">Haitang Bay, Sanya, 12/2019</p>
+                    </div> -->
+<!--                     <div class="photo-section">
+                        <img src="hainan3.jpg" alt="Mountain View, Hainan">
+                        <p class="photo-description">Bodhisattva Guanyin Statue, Hainan, 12/2019</p>
+                     </div>  -->
+                 </section> 
+            </div>
+        </main>
+    </div>
+   
     <footer>
         <div class="container">
             <p>&copy; 2025 Wenhui Chu. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Visitor Tracking Script -->
-    <script>
-        async function trackVisitor() {
-            try {
-                const response = await fetch('https://ipapi.co/json/');  // Fetch IP and location data
-                const data = await response.json();
-
-                const visitorInfo = {
-                    ip: data.ip,
-                    city: data.city,
-                    region: data.region,
-                    country: data.country_name,
-                    latitude: data.latitude,
-                    longitude: data.longitude,
-                    isp: data.org,
-                    timestamp: new Date().toISOString()
-                };
-
-                console.log(visitorInfo); // For testing: view in console
-
-                // Send data to backend (uncomment if you have a backend)
-                await fetch('save_visitor.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(visitorInfo)
-                });
-
-            } catch (error) {
-                console.error('Error fetching geo-location:', error);
-            }
-        }
-
-        // Execute tracking
-        trackVisitor();
-    </script>
-
 </body>
-
 </html>
+
+
+
