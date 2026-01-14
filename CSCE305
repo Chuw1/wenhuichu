@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCE 305 Computational Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+    <header>
+      
+    </header>
+
+    <main>
+        <h1>CSCE 305 – Computational Data Science</h1>
+        <p>Undergraduate course, Texas A&amp;M University, Computer Science and Engineering Department, Spring 2026</p>
+
+        <p>
+            Credits: 3. 3 Lecture Hours.  
+            Introduction to computational methods for data-driven discovery, including data collection, cleaning, exploratory analysis, visualization, statistical modeling, and machine learning techniques. Emphasis on practical computational tools for analyzing real-world datasets and drawing reproducible, evidence-based conclusions.
+        </p>
+
+        <p>
+            Topics include data wrangling, numerical computing, probability and statistics for data science, regression and classification, clustering, dimensionality reduction, and ethical issues in data analysis. Students will use modern programming environments and libraries to build end-to-end data science pipelines.
+        </p>
+
+        <p>
+            Prerequisite: Grade of C or better in CSCE 221 or equivalent programming background.  
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wenhui Chu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
